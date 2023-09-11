@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+      .container-float{
+        background-color: red;
+        height: 300px;
+        margin-bottom: 20px;
+      }
+      .row{
+        background-color: rgb(21, 255, 0);  
+        height: 15vh;
+      } 
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container-xl" id="red">
+      <p>row</p> it is wrong way to add content in bootstrap becouce the containt is always under a columns
+    </div> -->
+
+    <div class="container-float"> <!-- Bootstrap provide like this classes which is automatilly apply the styles.-->
+      <div class="row" id="green">
+        <div class="col-lg-4 col-12 col-md-4 bg-primary text-white">col-4</div>
+        <div class="col-lg-3 col-8 col-md-4 bg-secondary text-white">col-3</div> 
+        <div class="col-lg-5 col-4 col-md-4 bg-success text-white">col-3</div> 
+      </div>
+    </div>
+
+    <!-- Flow of Bootstrap-
+    container > row > columns > content( like text, images and so on....) -->
+
+<!-- 
+X-small-                          0px to 575px          [col-*]
+Small(sm)-                        576px to 767px        [col-sm-*]
+Medium(md)-                       768px to 991px        [col-md-*]
+Large(lg)-                        992px to 1199px       [col-lg-*]
+Extra Large(xl)-                  1200px to 1399px      [col-xl-*]
+Extra extra large(xxl)-           1400px to infinete    [col-xxl-*]
+(at the place of * means number of columns) 
+Example:
+you can discribe col-md-12 the "md" size and there above size contain same settings and the size is less than "md" the content columns is in full size
+-->
+
+<div class="container-float"> 
+  <div class="row" id="green">
+    <div class="col-lg-4 col-xl-2 col-sm-6 bg-primary text-white">col-4</div>
+    <div class="col-lg-3 col-xl-7 col-sm-6 bg-secondary text-white">col-3</div> 
+    <div class="col-lg-5 col-xl-3 col-sm-12 bg-success text-white">col-3</div> 
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
