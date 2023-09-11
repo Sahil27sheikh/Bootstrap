@@ -1,0 +1,63 @@
+<!-- in bootstrap grid System is the combination of Breakpoint, Container, Row and Columns.
+
+1) Break point: is the catagory which can divede the internate accesable diveces like-
+X-smal- 0px to 575px
+Small(sm)- 576px to 767px
+Medium(md)- 768px to 991px
+Large(lg)- 992px to 1199px 
+Extra Large(xl)- 1200px to 1399px 
+Extra extra large(xxl)- >=1400px
+
+2) Container: wrapper theat contain the website. website width depend upon the wrapper width.
+
+3) row is the div which contain Columns.
+Row is the compusory parent of Columns. the parent of the columns is not the columns.
+but the parent of the row is Container and columns also.
+there class is row. row is always under a Container.
+when ever you define a div with row class it divide that div in to 12 columns. -->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+      #red{
+        background-color: red;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- there are three type of containers the first type are "container fluid" -->
+    <!-- container fluid give 100% width in every diveces. -->
+    <!-- <div class="container-fluid" id="red">
+        <h1>Hello, world!</h1>
+    </div> -->
+
+    <!-- Secont type of container is simple "container"
+    the container get margin and automatically decress there size by the screen type. but at the mobile size screen it give 100% of width.-->
+    <!-- <div class="container" id="red">
+        <h1>Hello, world!</h1>
+    </div> -->
+
+    <!-- third type of container is container breadpoint. it is the mixture of both two containers. it is define that which screen type the widthe is 100%. 
+    Example- -->
+    <!-- <div class="container-xl"id=red>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi expedita ut similique nulla hic reiciendis nostrum? Dolorem nesciunt quis quos enim deserunt et.</h1>
+    </div>   -->
+    <!-- it is get margin in the screen size is more than xl. but if the screen size is xl it get 100% screen size. -->
+    <!-- One more Example- -->
+    <div class="container-md" id="red">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere veritatis, laboriosam hic corporis eius ipsa quas est harum fugit, similique quasi! Omnis sint enim libero a hic. Rem molestias iusto, earum cum ab atque vero, officia ad odit laborum consequatur enim. Eius, accusantium praesentium.</p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
