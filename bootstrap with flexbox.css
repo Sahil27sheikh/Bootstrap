@@ -1,0 +1,56 @@
+body{
+    background-color: yellow;
+}
+.first{
+    height: 30vh;
+    background-color: black;
+    color: white;
+    margin: 20px 0; 
+    text-align: center;
+    text-transform: uppercase;  
+}
+
+.second{
+    height: 30vh;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    margin: 20px 0; 
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.third{
+    height: 40vh;
+    background-color: rgb(0, 255, 234);
+    color: rgb(7, 7, 7);
+    margin: 20px 0;  
+    text-transform: uppercase; 
+    text-align: center;
+}
+.now{
+    height: 20vh;
+    background-color: rgb(255, 0, 179);
+    align-items:center; 
+} 
+
+.then{
+    height: 20vh;
+    background-color: rgb(255, 0, 179);
+    align-items:center; 
+    justify-content: space-around;
+} 
+
+.when{
+    height: 30vh;
+    background-color: rgb(145, 255, 0);  
+} 
+
+.div1{
+    align-self: flex-start;
+} 
+.div3{
+    align-self: center;
+}
+.div4{
+    align-self: flex-end;
+}
